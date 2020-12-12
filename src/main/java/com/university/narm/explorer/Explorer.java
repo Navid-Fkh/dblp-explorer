@@ -46,8 +46,8 @@ public class Explorer
                         lines.add(line);
                 }
                 i += 5000;
-                if (i == 1000000) // to make testing easier
-                    break;
+//                if (i == 1000000) // to make testing easier
+//                    break;
                 System.out.println("Lines readed -> " + i);
                 lines.parallelStream().forEach(l -> createPaper(l));
             }
